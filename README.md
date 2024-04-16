@@ -43,4 +43,4 @@ To run this project locally, follow these steps:
 
 ## My-Portfolio
 
-![pranav-kumar-singh](./src/assets/Thumbnail.gif) 
+![pranav-kumar-singh](./src/assets/pranav-kumar-singh-portfolio.gif) 
