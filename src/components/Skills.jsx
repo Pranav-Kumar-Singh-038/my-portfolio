@@ -1,4 +1,8 @@
 import React from 'react';
+import { motion } from "framer-motion"
+import { useInView } from "framer-motion"
+import { useRef } from "react"
+
 const skills = [
     { name: 'HTML', icon: 'https://res.cloudinary.com/dxwlsrgwj/image/upload/v1713260000/html-1_zeffre.svg' },
     { name: 'CSS', icon: 'https://res.cloudinary.com/dxwlsrgwj/image/upload/v1713261949/css-3_ghvp4z.svg' },
@@ -24,14 +28,37 @@ const SkillCard = ({ skill }) => (
 );
 
 const SkillsComponent = () => {
+
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
+    const transition = {
+        duration: 0.05,
+        ease: [0, 0.71, 0.2, 1.01],
+        scale: {
+            type: "tween",
+            damping: 8,
+            stiffness: 100,
+            restDelta: 0.001
+        }
+    }
+
+
     return (
-        <div className=" bg-stone-900 px-96 pb-16">
+        <div className=" bg-stone-900 px-96 pb-16 ">
             <div className='z-10 flex w-full justify-center text-5xl gap-2 mb-16 text-white'>My<div className='text-purple-500'> Skills</div></div>
-            <div className="grid grid-cols-7 bg-stone-900 gap-4  ">
+            <motion.div
+                ref={ref}
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
+                transition={transition}
+                className="grid grid-cols-7 bg-stone-900 gap-4"
+            >
                 {skills.map(skill => (
                     <SkillCard key={skill.name} skill={skill} />
                 ))}
-            </div>
+            </motion.div>
+
         </div>
     );
 };

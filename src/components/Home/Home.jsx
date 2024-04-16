@@ -8,6 +8,17 @@ export function Home() {
     const ref = useRef(null)
     const isInView = useInView(ref)
 
+    const transition={
+        duration: 0.2,
+        ease: [0, 0.71, 0.2, 1.01],
+        scale: {
+          type: "spring",
+          damping: 8,
+          stiffness: 200,
+          restDelta: 0.001
+        }
+      }
+
     const container = {
         hidden: { opacity: 1, scale: 1 },
         visible: {
@@ -46,7 +57,9 @@ export function Home() {
     return (
         <div className="flex flex-col justify-center items-center text-white bg-stone-900 w-full h-full">
             <div className='z-10 flex text-3xl gap-2 mb-4'>Pranav<div className='text-purple-500'> Kumar Singh</div></div>
-            <img src="pfp.jpeg" alt="Profile" className="rounded-full h-60  z-10 mb-4"></img>
+            <motion.img initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+                transition={transition} src="pfp.jpeg" alt="Profile" className="rounded-full h-60  z-10 mb-4"></motion.img>
             <span className="  text-2xl font-thin mb-4">I am into <span className={`animated-text ${!fade ? 'fade-out' : ''} text-2xl`}>{currentWord}</span></span>
             <motion.div ref={ref} variants={container} initial="hidden" animate={isInView ? "visible" : "hidden"} className="flex gap-8 justify-center ">
                 {/* <!--twitter icon --> */}

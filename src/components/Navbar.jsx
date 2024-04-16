@@ -14,7 +14,7 @@ export function Navbar() {
                 {/* <a href="#about"><div className="hover:text-white underline-animation z-10">Experience</div></a> */}
                 <a href="#"> <div className="hover:text-white underline-animation z-10">Skills</div></a>
                 <a href="#"><div className="hover:text-white underline-animation z-10">Projects</div></a>
-                <a href="#"><div className="hover:text-white underline-animation z-10">Education</div></a>
+                {/* <a href="#"><div className="hover:text-white underline-animation z-10">Education</div></a> */}
                 {/* <a href="#"><div className="hover:text-white underline-animation z-10">Contact</div></a> */}
             </div>
 
