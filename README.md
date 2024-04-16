@@ -38,9 +38,9 @@ To run this project locally, follow these steps:
 
 ## Preview
 
-[Pranav Kumar Singh Portfolio Preview](https://youtu.be/mmdieewTAAk)
+[Pranav Kumar Singh Portfolio Preview]((https://youtu.be/W1cegPIecds))
 
 
-## Dukan-Frontend
+## My-Portfolio
 
 ![pranav-kumar-singh](./src/assets/Thumbnail.gif) 
