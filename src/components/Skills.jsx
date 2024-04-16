@@ -45,7 +45,7 @@ const SkillsComponent = () => {
 
 
     return (
-        <div className=" bg-stone-900 px-96 pb-16 ">
+        <div className=" bg-stone-900 px-96 pb-8 pt-8 " id="skills">
             <div className='z-10 flex w-full justify-center text-5xl gap-2 mb-16 text-white'>My<div className='text-purple-500'> Skills</div></div>
             <motion.div
                 ref={ref}

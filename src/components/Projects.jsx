@@ -62,7 +62,7 @@ export function Projects() {
     ];
 
     return (
-        <div className="bg-stone-900 w-full h-screen ">
+        <div className="bg-stone-900 w-full h-screen pt-8" id="projects">
             <div className='z-10 flex w-full justify-center text-5xl gap-2 mb-4 text-white'>My<div className='text-purple-500'> Projects</div></div>
             <motion.div ref={ref} variants={container} initial="hidden" animate={isInView ? "visible" : "hidden"} className="bg-stone-900 flex flex-wrap justify-center items-start pt-8 px-72 overflow-auto w-full">
                 {projectData.map(project => (

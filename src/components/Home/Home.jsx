@@ -55,7 +55,7 @@ export function Home() {
     }, [currentWord]);
 
     return (
-        <div className="flex flex-col justify-center items-center text-white bg-stone-900 w-full h-full">
+        <div className="flex flex-col justify-center items-center text-white bg-stone-900 w-full h-full " id="home">
             <div className='z-10 flex text-3xl gap-2 mb-4'>Pranav<div className='text-purple-500'> Kumar Singh</div></div>
             <motion.img initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -63,7 +63,7 @@ export function Home() {
             <span className="  text-2xl font-thin mb-4">I am into <span className={`animated-text ${!fade ? 'fade-out' : ''} text-2xl`}>{currentWord}</span></span>
             <motion.div ref={ref} variants={container} initial="hidden" animate={isInView ? "visible" : "hidden"} className="flex gap-8 justify-center ">
                 {/* <!--twitter icon --> */}
-                <motion.a variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="socialicon twitter z-10" href="" target="_blank" rel="author">
+                <motion.a variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="socialicon twitter z-10" href="https://twitter.com/Pranav_Kumar09" target="_blank" rel="author">
 
                     <svg className="twitter-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enableBackground="new 0 0 500 500" xmlSpace="preserve">
                         {/* <!-- bird body --> */}
@@ -119,7 +119,7 @@ export function Home() {
                     </svg>
                 </motion.a>
                 {/* Linkedin icon */}
-                <motion.a variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="socialicon linkedin z-10" href="" target="_blank" rel="author">
+                <motion.a variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="socialicon linkedin z-10" href="https://www.linkedin.com/in/pranav-kumar-singh/" target="_blank" rel="author">
                     <svg className="linkedin-icon feather feather-linkedin" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="#0e76a8" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                         <rect x="2" y="9" width="4" height="12"></rect>
@@ -128,7 +128,7 @@ export function Home() {
                 </motion.a>
 
                 {/* Codeforces icon */}
-                <motion.a variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="socialicon codeforces z-10" href="" target="_blank" rel="author">
+                <motion.a variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="socialicon codeforces z-10" href="https://codeforces.com/profile/Sleepy_Sage" target="_blank" rel="author">
                     <svg className="codeforces-icon" xmlns="http://www.w3.org/2000/svg" viewBox="5 0 14 19" width="100" height="100">
                         <g>
                             <rect className="red" x="15" width="2" height="6.5" rx="0.7" y="0" fill="#AE0F0A" />
@@ -139,7 +139,7 @@ export function Home() {
                 </motion.a>
 
                 {/* <!-- instagram icon --> */}
-                <motion.a variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="socialicon instagram z-10" href="" target="_blank" rel="author">
+                <motion.a variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="socialicon instagram z-10" href="https://www.instagram.com/pranav_kumar_singh_/" target="_blank" rel="author">
 
                     <svg className="instagram-icon" x="0px" y="0px" viewBox="0 0 202.5 202.5" >
                         <circle id="littleCircle" className="st0" cx="101" cy="101.5" r="18.9" />
@@ -151,7 +151,7 @@ export function Home() {
                 </motion.a>
 
                 {/* <!--  Github icon --> */}
-                <motion.a variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="socialicon github z-10" href="" target="_blank" rel="author">
+                <motion.a variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="socialicon github z-10" href="https://github.com/Pranav-Kumar-Singh-038" target="_blank" rel="author">
 
                     <svg className="github-icon" width="45px" height="45px" viewBox="0 0 300 300">
                         {/* <!-- body --> */}
