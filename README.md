@@ -33,12 +33,12 @@ To run this project locally, follow these steps:
 
 ## Live Link
 
-[Pranav-Kumar-Singh]((https://pranav-kumar-singh.netlify.app/))
+[Pranav-Kumar-Singh](https://pranav-kumar-singh.netlify.app/)
 
 
 ## Preview
 
-[Pranav Kumar Singh Portfolio Preview]((https://youtu.be/W1cegPIecds))
+[Pranav Kumar Singh Portfolio Preview](https://youtu.be/W1cegPIecds)
 
 
 ## My-Portfolio
