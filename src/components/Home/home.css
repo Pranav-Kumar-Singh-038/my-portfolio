@@ -26,10 +26,6 @@
   --link-size-footer-s: 30px;
 }
 
-a.socialicon {
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-}
-
 .socialicon{
   display: flex;
   position: relative;
@@ -39,8 +35,6 @@ a.socialicon {
   background-color:#0c0a09;
   margin: 8px;
   border-radius: 50%;
-  box-shadow: 2px 5px 5px var(--shadow-col);
-  text-decoration: none;
 }
 
  /*

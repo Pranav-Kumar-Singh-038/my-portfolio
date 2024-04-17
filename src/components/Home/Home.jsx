@@ -52,8 +52,8 @@ export function Home() {
             setTimeout(() => {
                 setFade(true);
                 setCurrentWord(words[(words.indexOf(currentWord) + 1) % words.length]);
-            }, 1000);
-        }, 3000);
+            }, 600);
+        }, 1200);
         return () => clearInterval(intervalId);
     }, [currentWord]);
 
@@ -63,8 +63,8 @@ export function Home() {
             <motion.img initial={{ opacity: 0, scale: 0.5 }} ref={ref2}
                 animate={isInView2 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
                 transition={transition} src="pfp.jpeg" alt="Profile" className="rounded-full h-60  z-10 mb-4"></motion.img>
-            <span className="  text-2xl font-thin mb-4">I am into <span className={`animated-text ${!fade ? 'fade-out' : ''} text-2xl`}>{currentWord}</span></span>
-            <motion.div ref={ref} variants={container} initial="hidden" animate={isInView ? "visible" : "hidden"} className="flex gap-8 justify-center ">
+            <span className=" transition-all duration-500 ease-in-out text-2xl font-thick mb-4">I am into <span className={`animated-text ${!fade ? 'fade-out' : ''} transition-all duration-500 ease-in-out text-2xl`}>{currentWord}</span></span>
+            <motion.div ref={ref} variants={container} initial="hidden" animate={isInView ? "visible" : "hidden"} className=" transition-all duration-500 ease-in-out flex lg:gap-8 md:gap-4 gap-1 justify-center ">
                 {/* <!--twitter icon --> */}
                 <motion.a variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="socialicon twitter z-10" href="https://twitter.com/Pranav_Kumar09" target="_blank" rel="author">
 

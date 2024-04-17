@@ -45,14 +45,15 @@ const SkillsComponent = () => {
 
 
     return (
-        <div className=" bg-stone-900 px-96 pb-8 pt-8 " id="skills">
-            <div className='z-10 flex w-full justify-center text-5xl gap-2 mb-16 text-white'>My<div className='text-purple-500'> Skills</div></div>
+        <div className="transition-all duration-500 ease-in-out flex flex-col justify-center bg-stone-900 pb-8 pt-24 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-96" id="skills">
+            <div className=' transition-all duration-500 ease-in-out z-10 flex  justify-center text-5xl gap-2 text-white pb-8'>My<div className='text-purple-500'> Skills</div></div>
             <motion.div
                 ref={ref}
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
                 transition={transition}
-                className="grid grid-cols-7 bg-stone-900 gap-4"
+                className="transition-all duration-500 ease-in-out grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-2 sm:gap-3 md:gap-4 lg:gap-5"
+
             >
                 {skills.map(skill => (
                     <SkillCard key={skill.name} skill={skill} />

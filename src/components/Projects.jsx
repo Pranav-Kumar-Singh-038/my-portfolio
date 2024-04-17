@@ -30,7 +30,7 @@ export function Projects() {
         {
             id: 1,
             name: "Fight",
-            description: "This is a brief description of Project One.",
+            description: "Fight game I made using vanilla javascript",
             imageUrl: "https://res.cloudinary.com/dxwlsrgwj/image/upload/v1713273907/Screenshot_from_2024-04-16_18-50-08_c7ktjx.png",
             source: "https://github.com/Pranav-Kumar-Singh-038/Fight",
             demo: "https://fight-pranavkumarsingh.netlify.app/"
@@ -62,13 +62,13 @@ export function Projects() {
     ];
 
     return (
-        <div className="bg-stone-900 w-full h-screen pt-8" id="projects">
-            <div className='z-10 flex w-full justify-center text-5xl gap-2 mb-4 text-white'>My<div className='text-purple-500'> Projects</div></div>
-            <motion.div ref={ref} variants={container} initial="hidden" animate={isInView ? "visible" : "hidden"} className="bg-stone-900 flex flex-wrap justify-center items-start  px-72 overflow-auto w-full">
+        <div className="bg-stone-900 w-full h-screen pt-24 " id="projects">
+            <div className='z-10 flex w-full justify-center text-5xl gap-2 mb-12 text-white'>My<div className='text-purple-500'> Projects</div></div>
+            <motion.div ref={ref} variants={container} initial="hidden" animate={isInView ? "visible" : "hidden"} className="bg-stone-900 flex flex-wrap justify-center items-start px-6 sm:px-12 md:px-24 lg:px-48 xl:px-72 overflow-auto w-full">
                 {projectData.map(project => (
-                    <motion.div key={project.id} variants={item} whileHover={{ scale: 1.05 }} className="flex flex-col z-10 w-1/2 p-8 ">
+                    <motion.div key={project.id} variants={item}  className="flex flex-col z-10 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/2 p-4">
                         <div className="bg-stone-800 hover:bg-stone-700 text-white  p-2 rounded-lg shadow-lg">
-                            <img src={project.imageUrl} alt={project.name} className="w-full h-48 hover:h-72 object-cover rounded transition-all delay-300 duration-300 ease-in-out" />
+                            <img src={project.imageUrl} alt={project.name} className="w-full h-48 object-cover rounded transition-all duration-300 ease-in-out lg:hover:h-64" />
                             <h3 className="text-lg font-bold mt-2">{project.name}</h3>
                             <div className="flex justify-between pr-4">
                                 <p className="text-stone-400">{project.description}</p>
