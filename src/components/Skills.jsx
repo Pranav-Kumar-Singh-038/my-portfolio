@@ -23,7 +23,7 @@ const skills = [
 const SkillCard = ({ skill }) => (
     <div className="px-4 pt-2 bg-stone-800 rounded-lg shadow-lg z-10">
         <img src={skill.icon} className='flex justify-center h-8 w-full'></img>
-        <h5 className=" flex justify-center mb-2 mt-2 text-l tracking-tight text-stone-400">{skill.name}</h5>
+        <h5 className=" flex justify-center mb-2 mt-2 text-l tracking-tight text-stone-200">{skill.name}</h5>
     </div>
 );
 
