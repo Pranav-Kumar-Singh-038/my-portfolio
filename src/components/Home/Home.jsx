@@ -58,7 +58,7 @@ export function Home() {
     }, [currentWord]);
 
     return (
-        <div className="flex flex-col justify-center items-center text-white bg-stone-900 w-full h-auto md:h-full lg:h-full " id="home">
+        <div className="flex flex-col justify-center items-center text-white bg-stone-900 w-full h-auto md:h-full lg:h-full pt-8" id="home">
             <div className='z-10 flex text-3xl gap-2 mb-4'>Pranav<div className='text-purple-500'> Kumar Singh</div></div>
             <motion.img initial={{ opacity: 0, scale: 0.5 }} ref={ref2}
                 animate={isInView2 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}

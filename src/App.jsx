@@ -8,7 +8,7 @@ import { About } from "./components/About"
 function App() {
 
   return (
-    <div className="w-screen h-screen">
+    <div className=" h-fit w-fit">
       <Navbar></Navbar>
       <Home></Home>
       <About></About>
