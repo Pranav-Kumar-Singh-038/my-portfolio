@@ -45,11 +45,11 @@ export function Projects() {
         },
         {
             id: 3,
-            name: "Mouse Tracker Canvas",
-            description: "Project to utilize and demonstrate the use of the canvas tag, prelude to fight.",
-            imageUrl: "https://res.cloudinary.com/dxwlsrgwj/image/upload/v1713274738/Screenshot_from_2024-04-16_19-07-48_c1um3m.png",
-            source: "https://github.com/Pranav-Kumar-Singh-038/Mouse_Tracker-Canvas?tab=readme-ov-file",
-            demo: "https://mouse-tracker-fx-pranav-kumar-singh.netlify.app/"
+            name: "Commercial Portfolio",
+            description: "A Portfolio for business and service providers built using react. ",
+            imageUrl: "https://res.cloudinary.com/dxwlsrgwj/image/upload/v1714910804/Screenshot_from_2024-05-05_17-36-14_uoo8n6.png",
+            source: "https://github.com/Pranav-Kumar-Singh-038/react-portfolio",
+            demo: "https://main--commercial-portfolio.netlify.app/"
         },
         {
             id: 4,
