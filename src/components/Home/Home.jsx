@@ -62,7 +62,8 @@ export function Home() {
             <div className='z-10 flex text-3xl gap-2 mb-4'>Pranav<div className='text-purple-500'> Kumar Singh</div></div>
             <motion.img initial={{ opacity: 0, scale: 0.5 }} ref={ref2}
                 animate={isInView2 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
-                transition={transition} src="pfp.jpeg" alt="Profile" className="rounded-full h-60  z-10 mb-4"></motion.img>
+                transition={transition} src="pfp.jpeg" alt="Profile" className="rounded-full h-60 z-10 mb-4">
+            </motion.img>
             <span className=" transition-all duration-500 ease-in-out text-2xl font-thick mb-4">I am into <span className={`animated-text ${!fade ? 'fade-out' : ''} transition-all duration-500 ease-in-out text-2xl`}>{currentWord}</span></span>
             <motion.div ref={ref} variants={container} initial="hidden" animate={isInView ? "visible" : "hidden"} className=" transition-all duration-500 ease-in-out flex lg:gap-8 md:gap-4 gap-1 justify-center ">
                 {/* <!--twitter icon --> */}
